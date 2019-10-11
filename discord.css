@@ -1,0 +1,141 @@
+body{
+	background-color: #7289da ;
+}
+
+nav{
+    position: fixed;
+    width: 600px;
+    margin-left: 50% ;
+    background-color: #7289da;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #7289da;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+.description{
+    color: black ;
+    font-size: 20px ;
+    font-weight: bold;	
+    font-family: "Comic Sans MS", cursive, sans-serif ;
+    animation-name: slidein ;
+    animation-duration: 5s ;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+#screenshot{
+	display: flex;
+	justify-content: space-around;
+}
+
+h1{
+	text-align: center;
+}
+
+.discordvid{
+	margin-left: 25% ;
+
+}
+
+.button {
+  border-radius: 4px;
+  background-image: url("photo/google.png");
+  background-repeat: no-repeat; 
+  width: 130px;
+  height: 40px;
+}
+
+.button2{
+  border-radius: 4px;
+  background-image: url("photo/ios.png");
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 40px;
+}
+
+.button3{
+  border-radius: 4px;
+  background-image: url("photo/logodiscord2.png");
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 100px;
+}
+
+
+.reseaux{
+	display: flex;
+	justify-content: space-around;
+}

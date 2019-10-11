@@ -1,0 +1,79 @@
+body{
+	background-image: url("photo/back.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+h1{
+	color: turquoise ;
+	font-size: 40px; 
+	font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.appli{
+	position: relative;
+	animation-duration: 2s ;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.dokkan{
+	width: 10% ;
+	margin-left: 25%; 
+	margin-top: 10% ;
+}
+.dokkan figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.dokkan figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+
+}
+
+
+.snap{
+	width: 10% ;
+	margin-left: 35% ;
+}
+.snap figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.snap figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.discord{
+	width: 10% ;
+	margin-left: 45% ;
+}
+.discord figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.discord figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
